@@ -1,0 +1,93 @@
+/******************************************
+*
+*
+***   Author:         Abdulfatai Quadri Adewale
+***   Country:        Nigeria
+***   Date:           December 6, 2021
+***   Project Title:  My Simple CAlculator
+*
+*
+******************************************/
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section {
+  background-color: rgb(18, 26, 31);
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  background-color: rgb(27, 27, 27);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.display {
+  background-color: rgb(10, 10, 10);
+  height: 100px;
+  width: 100%;
+  text-align: right;
+  padding: 20px;
+  font-size: 30px;
+  position: relative;
+  color: white;
+}
+
+.display1 {
+  opacity: .4;
+  font-size: 20px;
+  height: 20px;
+  overflow: hidden;
+}
+
+.display3 {
+  opacity:.4;
+  position: absolute;
+  bottom: 0;
+  left: 10;
+}
+
+.allbtn {
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.button {
+  border: .5px solid rgb(92, 92, 92, 0.137);
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(50, 52, 53);
+}
+
+.zero {
+  grid-column: 1/3;
+}
+
+.operator, .modulus, .clearAll, .clearLastInput{
+  color: green;
+}
+
+.equalSign {
+  background-color: rgb(48, 165, 48);
+}
